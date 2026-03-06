@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estructura */
+html {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Etiquetas */
+h1 {
+    margin-bottom: 2rem;
+}
+
+li {
+    display: flex;
+    padding: 6px;
+    border-bottom: 1px solid #aaa;
+    align-items: center;
+    gap: 8px;
+}
+
+span {
+    flex-grow: 1;
+}
+
+/* class | clase */
+.caja {
+    width: 80%;
+}
+
+.lista {
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+}
+
+.tachada span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* id */
+#padre {
+    margin-top: 2rem;
+    list-style: none;
+}

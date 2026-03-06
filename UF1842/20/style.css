@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parent {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 0.75fr;
+    grid-template-rows: 0.25fr repeat(3, 1fr) 0.25fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 6;
+    border-bottom: 2px solid beige;
+}
+
+.div2 {
+    grid-area: 2 / 5 / 5 / 6;
+    background-color: #eee;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.div3 {
+    grid-area: 5 / 1 / 6 / 6;
+    background-color: chartreuse;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 5 / 5;
+    /* background-color: brown; */
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1rem;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    width: 200px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+
+}
+
+.foto {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.nombre {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.descripcion {
+    /* color:aliceblue; */
+    padding: 0.5rem;
+}
+
+.precio {
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.boton_comprar {
+    background-color: gold;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+.comprado{
+    background-color: rgb(140, 120, 8);
+}
+
+#lista{
+    list-style: none;
+    padding: 0.4rem;
+}
+
+#total{
+    font-weight: bold;
+}
+
+#pagar{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 0.25rem;
+    border-radius: 5px;            
+}
+
+.total{
+    border-top: 2px solid #bbb;
+}

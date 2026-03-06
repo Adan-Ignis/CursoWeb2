@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#scrollbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background-color: aqua;
+    width: 0;
+    z-index: 1;
+}
+
+#gris {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background-color: rgb(175, 179, 179);
+    width: 100%;
+}
+
+.oscuro {
+    background-color: rgb(48, 47, 47);
+    color: whitesmoke;
+}
+
+.flecha {
+    width: 50px;
+    height: 40px;
+    background-color: lightgrey;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+}
+
+.flecha:hover {
+    cursor: pointer;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.884);
+    overflow: hidden;
+}
+
+.tabs {
+    display: flex;
+    background-color: rgb(84, 129, 242);
+    border-radius: 8px 8px 0 0;
+}
+
+.tab {
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    background-color: rgb(72, 52, 200);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: whitesmoke;
+    color: rgb(72, 52, 200);
+}
+
+.tab.active {
+    background-color: rgba(241, 241, 151, 0.555);
+    color: rgb(72, 52, 200);
+}
+
+.tab-content {
+    padding: 20px;
+    display: none;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+.tab-content.active {
+    display: block;
+}
