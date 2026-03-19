@@ -1,0 +1,1 @@
+El tema trata de los "template" en HTML
