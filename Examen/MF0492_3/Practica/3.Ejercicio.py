@@ -30,6 +30,6 @@ def calcular_media(personas):
     return sum(p["edad"] for p in personas) / len(personas) if personas else 0
 
 mayores = filtrar_mayores(data)
-print("Mayores de edad: ", mayores)
+# print("Mayores de edad: ", mayores)
 print("Nombre: ", obtener_nombres(mayores))
 print("Edad media: ", calcular_media(mayores))
