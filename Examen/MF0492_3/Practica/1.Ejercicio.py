@@ -29,3 +29,6 @@ def validar_contrasena(password):
         return False, "Debe contener al menos un carácter especial"
 
     return True, "Contraseña válida"
+
+contrasena = input("Pon una contrasena: ")
+print(f"{validar_contrasena(contrasena)}")
